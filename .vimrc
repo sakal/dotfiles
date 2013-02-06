@@ -27,4 +27,5 @@ hi! link CursorColumn CursorLine
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
+let g:user_zen_leader_key = '<c-e>'
 
