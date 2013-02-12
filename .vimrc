@@ -53,20 +53,22 @@ let python_highlight_all=1
 
 " gui and terminal compatible color scheme
 set t_Co=256
-set background=dark
+" set background=dark
 " set global variables that will define the colorscheme
 let g:light_theme='zenburn'
 let g:dark_theme='zenburn'
 
 " Use the "original" molokai theme colors instead of "dark"
-let g:molokai_original=1
+"let g:molokai_original=1
 
 " Zenburn settings
-let g:zenburn_alternate_Error = 1
+" let g:zenburn_alternate_Error = 1
 
 " Solarized settings
-let g:solarized_termcolors=16
+" let g:solarized_termcolors=16
 
+" let g:zenburn_alternate_Visual = 1
+let g:zenburn_old_Visual = 1
 
 " Command to call the ColorSwitch funciton
 command! -nargs=? -complete=customlist,s:completeColorSchemes ColorSwitcher :call s:colorSwitch(<q-args>)
@@ -138,10 +140,10 @@ ColorSwitcher g:dark_theme
 set cuc cul
 
 if &bg == 'dark' 
-    hi CursorLine gui=NONE guibg=#FFFFFF ctermbg=darkcyan ctermfg=white cterm=bold
+    hi CursorLine guibg=#222222 ctermbg=darkcyan ctermfg=white cterm=bold
 else 
     " hi CursorLine gui=NONE guibg=#CCCCCC ctermbg=darkblue cterm=bold
-    hi CursorLine gui=NONE guibg=#CCCCCC ctermbg=12 cterm=bold
+    hi CursorLine guibg=#222222 guifg=#AAAAAA ctermbg=12 cterm=bold
 
 endif 
 hi! link CursorColumn CursorLine 
