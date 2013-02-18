@@ -154,4 +154,8 @@ let g:user_zen_leader_key = '<c-e>'
 
 " shortcuts
 nnoremap <silent> <F3> :TagbarToggle<CR>
+map <leader>p :NERDTreeToggle<CR>
+vmap <leader>p :NERDTreeToggle<CR>i
+imap <leader>p :NERDTreeToggle<CR>i
+
 
