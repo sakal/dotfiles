@@ -152,6 +152,7 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 let g:user_zen_leader_key = '<c-e>'
 
+let NERDTreeIgnore = ['\.pyc$']
 " shortcuts
 nnoremap <silent> <F3> :TagbarToggle<CR>
 map <leader>p :NERDTreeToggle<CR>
