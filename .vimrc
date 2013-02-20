@@ -140,10 +140,10 @@ ColorSwitcher g:dark_theme
 set cuc cul
 
 if &bg == 'dark' 
-    hi CursorLine guibg=#222222 ctermbg=darkcyan ctermfg=white cterm=bold
+    hi CursorLine ctermbg=darkgrey ctermfg=white cterm=bold
 else 
     " hi CursorLine gui=NONE guibg=#CCCCCC ctermbg=darkblue cterm=bold
-    hi CursorLine guibg=#222222 guifg=#AAAAAA ctermbg=12 cterm=bold
+    hi CursorLine guifg=darkgray ctermbg=darkgrey term=bold
 
 endif 
 hi! link CursorColumn CursorLine 
