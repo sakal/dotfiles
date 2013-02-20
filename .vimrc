@@ -162,4 +162,6 @@ map <leader>p :NERDTreeToggle<CR>
 vmap <leader>p :NERDTreeToggle<CR>i
 imap <leader>p :NERDTreeToggle<CR>i
 
+map <leader><Tab> :bn<CR>
+map <leader><S-Tab> :bp<CR>
 
