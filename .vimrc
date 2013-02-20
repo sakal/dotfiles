@@ -150,6 +150,9 @@ hi! link CursorColumn CursorLine
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
+au BufLeave * set nocursorline nocursorcolumn
+au BufEnter * set cursorline cursorcolumn
+
 let g:user_zen_leader_key = '<c-e>'
 
 let NERDTreeIgnore = ['\.pyc$']
