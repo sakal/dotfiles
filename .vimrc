@@ -153,15 +153,18 @@ au WinEnter * set cursorline cursorcolumn
 au BufLeave * set nocursorline nocursorcolumn
 au BufEnter * set cursorline cursorcolumn
 
+let g:jedi#use_tabs_not_buffers = 0
 let g:user_zen_leader_key = '<c-e>'
+let g:miniBufExplMapCTabSwitchBufs = 1
 
 let NERDTreeIgnore = ['\.pyc$']
 " shortcuts
-nnoremap <silent> <F3> :TagbarToggle<CR>
-map <leader>p :NERDTreeToggle<CR>
-vmap <leader>p :NERDTreeToggle<CR>i
-imap <leader>p :NERDTreeToggle<CR>i
+nnoremap <silent> <F4> :TagbarToggle<CR>
+map <silent> <F3> :NERDTreeToggle<CR>
+vmap <silent> <F3> :NERDTreeToggle<CR>i
+imap <silent> <F3> :NERDTreeToggle<CR>i
 
-map <leader><Tab> :bn<CR>
-map <leader><S-Tab> :bp<CR>
+noremap <C-o> :CtrlPBufTag<CR>
+" map <leader><Tab> :bn<CR>
+" map <leader><S-Tab> :bp<CR>
 
