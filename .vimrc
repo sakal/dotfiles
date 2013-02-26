@@ -158,6 +158,21 @@ let g:user_zen_leader_key = '<c-e>'
 let g:miniBufExplMapCTabSwitchBufs = 1
 
 let NERDTreeIgnore = ['\.pyc$']
+
+" EasyGrep options: <Leader>vo
+
+let g:EasyGrepFilesToExclude = '*.pyc'
+" 0 - All files
+" 1 - Open buffers
+" 2 - Track the current extension
+" 3 - User mode 
+let g:EasyGrepMode = 2 
+" 0 - vimgrep
+" 1 - grep
+let g:EasyGrepCpmmand = 1
+
+let g:EasyGrepRecursive = 1
+
 " shortcuts
 nnoremap <silent> <F4> :TagbarToggle<CR>
 map <silent> <F3> :NERDTreeToggle<CR>
