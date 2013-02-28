@@ -173,6 +173,11 @@ let g:EasyGrepCpmmand = 1
 
 let g:EasyGrepRecursive = 1
 
+
+" indentLine options
+let g:indentLine_enabled = 1
+let g:indentLine_color_term = 150
+
 " shortcuts
 nnoremap <silent> <F4> :TagbarToggle<CR>
 map <silent> <F3> :NERDTreeToggle<CR>
