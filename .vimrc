@@ -178,6 +178,9 @@ let g:EasyGrepRecursive = 1
 let g:indentLine_enabled = 1
 let g:indentLine_color_term = 150
 
+let g:gitgutter_enabled = 0
+let g:gitgutter_highlight_lines = 1
+
 " shortcuts
 nnoremap <silent> <F4> :TagbarToggle<CR>
 map <silent> <F3> :NERDTreeToggle<CR>
@@ -187,4 +190,5 @@ imap <silent> <F3> :NERDTreeToggle<CR>i
 noremap <C-o> :CtrlPBufTag<CR>
 " map <leader><Tab> :bn<CR>
 " map <leader><S-Tab> :bp<CR>
+noremap <leader><F2> :GitGutterToggle<CR>
 
